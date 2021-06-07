@@ -1,0 +1,12 @@
+{
+  "name": "publisher",
+  "displayName": "publisher",
+  "expo": {
+    "name": "publisher",
+    "slug": "publisher",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
