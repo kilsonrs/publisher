@@ -1,18 +1,14 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 
-import { Text } from 'react-native';
 
-import { Container } from './styles';
+import { Container, Title } from './styles';
 
-interface AboutProps {
-  children: ReactNode;
-}
 
-function About({ children }: AboutProps) {
+function About() {
   return (
     <Container>
-      <Text>Sobre o aplicativo</Text>
-      {children}
+      <Title>Sobre o aplicativo</Title>
+      
     </Container>
   );
 };

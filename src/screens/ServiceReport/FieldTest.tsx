@@ -14,12 +14,12 @@ function FieldTest() {
   const navigation = useNavigation()
 
   const handleSubmit = useCallback(() => {
-    navigation.navigate('Hours')
+    navigation.navigate('CreditCard')
   }, [])
   
   const cpfInputRef = useRef<TextInput>(null);
   return (
-    <ServiceReportForm title="Informe alguns dados" isFormFilled={false} handleSubmit={handleSubmit} >
+    <ServiceReportForm title="Informe alguns dados" isFormFilled={true} handleSubmit={handleSubmit} >
       <MaskInput
         type={'cel-phone'}
         options={{

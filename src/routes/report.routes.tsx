@@ -9,6 +9,7 @@ import Studies from '../screens/ServiceReport/Studies'
 import Summary from '../screens/Summary'
 import { useTheme } from 'styled-components'
 import CreditCard from '../screens/ServiceReport/CreditCard'
+import FieldTest from '../screens/ServiceReport/FieldTest'
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -30,13 +31,14 @@ export function ServiceReportRoutes() {
         cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
       }}
     >
-      <Screen name="CreditCard" component={CreditCard} options={{ title: 'Cartão de Crédito' }} />
+      <Screen name="FieldTest" component={FieldTest} options={{ title: 'Informações básicas' }} />
       <Screen name="Name" component={Name} options={{ title: 'Nome' }} />
       <Screen name="Publications" component={Publications}  options={{ title: 'Publicações' }}  />
       <Screen name="Videos" component={Videos}  options={{ title: 'Vídeos' }}  />
       <Screen name="Hours" component={Hours}  options={{ title: 'Horas' }}  />
       <Screen name="Revisits" component={Revisits}  options={{ title: 'Revisitas' }}  />
       <Screen name="Studies" component={Studies}  options={{ title: 'Estudos' }}  />
+      <Screen name="CreditCard" component={CreditCard} options={{ title: 'Cartão de Crédito' }} />
       <Screen name="Summary" component={Summary}  options={{ title: 'Resumo' }}  />
     </Navigator>
   )
