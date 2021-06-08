@@ -10,7 +10,7 @@ import {
   Poppins_500Medium,
   Poppins_700Bold,
 } from '@expo-google-fonts/poppins';
-import { StatusBar } from 'react-native';
+import { LogBox, StatusBar } from 'react-native';
 
 import theme from './src/global/styles/theme';
 import { Routes } from './src/routes';
@@ -25,7 +25,7 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />;
   }
-
+  LogBox.ignoreAllLogs(true)
   return (
     <ThemeProvider theme={theme}>
       <StatusBar backgroundColor={theme.colors.primary} barStyle="light-content" />
