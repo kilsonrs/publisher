@@ -23,4 +23,6 @@ export const Container = styled.TouchableOpacity.attrs({
   position: absolute;
   left: ${halfScreenWidth - 28}px;
   bottom: 28px ;
+
+  z-index: 20;
 `;
